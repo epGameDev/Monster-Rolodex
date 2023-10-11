@@ -1,4 +1,5 @@
 import { Component } from "react";
+import CardList  from "./components/card-list/card-list.component"
 // import viteLogo from "/vite.svg";
 import "./App.css";
 
@@ -11,11 +12,9 @@ class App extends Component {
       searchInput: "",
     };
 
-    console.log("Constructor Initialized");
   }
 
   componentDidMount() {
-    console.log("Component Mounted");
       fetch("https://jsonplaceholder.typicode.com/users")
       .then((response) => response.json())
       .then((users) =>
@@ -24,7 +23,7 @@ class App extends Component {
             return { monsters: users };
           },
           () => {
-            console.log(this.state);
+            // console.log(this.state);
           }
         )
       )
@@ -42,8 +41,6 @@ class App extends Component {
 
   render() 
   {
-    console.log("Rendering Dom");
-
     const { monsters, searchInput } = this.state
     const { onInputChange } = this;
     
@@ -56,11 +53,8 @@ class App extends Component {
       <div>
         <input type="search" name="search" id="search__input" placeholder="Search Monsters" onChange={onInputChange} />
 
-        {filteredMonsters.map((monster) => {
-          return (
-            <h3 key={monster.id}> {monster.name} {monster.email} </h3>
-          );
-        })}
+
+        <CardList monsters={filteredMonsters} />
       </div>
     );
   }
