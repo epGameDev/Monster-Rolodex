@@ -1,5 +1,6 @@
 import { Component } from "react";
 import CardList  from "./components/card-list/card-list.component"
+import SearchBar from "./components/search-bar/search-bar.component";
 // import viteLogo from "/vite.svg";
 import "./App.css";
 
@@ -51,8 +52,7 @@ class App extends Component {
 
     return (
       <div>
-        <input type="search" name="search" id="search__input" placeholder="Search Monsters" onChange={onInputChange} />
-
+        <SearchBar onChangeHandler={onInputChange} placeholder={"Search Monster"} className={"Search__Input-box"}/>
 
         <CardList monsters={filteredMonsters} />
       </div>
