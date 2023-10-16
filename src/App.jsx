@@ -52,7 +52,8 @@ class App extends Component {
 
     return (
       <div>
-        <SearchBar onChangeHandler={onInputChange} placeholder={"Search Monster"} className={"Search__Input-box"}/>
+        <h1 className="app__title">Monster's Rolodex</h1>
+        <SearchBar onChangeHandler={onInputChange} placeholder={"Search Monster"} className={"search__box-monster"}/>
 
         <CardList monsters={filteredMonsters} />
       </div>

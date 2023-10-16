@@ -1,0 +1,11 @@
+.search__input {
+    -webkit-appearance: none;
+    border: none;
+    outline: none;
+    padding: 1rem;
+    width: 25rem;
+    line-height: 30px;
+    margin-bottom: 5rem;
+    margin-top: 5rem;
+    font: inherit;
+  }
