@@ -16,7 +16,7 @@ class CardList extends Component {
 
           return (
             <div key={id}>
-              <Card id={id} name={name} email={email} />
+              <Card id={String(id)} name={name} email={email} />
             </div>
           )
           

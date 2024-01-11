@@ -12,7 +12,7 @@ class Card extends Component {
 
         <div className="container__card">
           <img
-            src={`https://robohash.org/${id}?set=set2&size=180x180`}
+            src={`https://robohash.org/${id + 1}?set=set2&size=180x180`}
             alt={`monster image of ${name}`}
           />
 
