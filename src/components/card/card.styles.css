@@ -1,5 +1,6 @@
 .container__card {
   max-width: 20rem;
+  min-height: 30rem;
   aspect-ratio: 2/2.5;
   display: flex;
   flex-direction: column;
