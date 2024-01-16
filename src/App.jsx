@@ -21,7 +21,7 @@ const App = () => {
     console.log("API Call");
   }, []);
 
-  // Creating filtered array as to not modify original array...
+  // Creating filtered array as to not modify original array, only changes if the monster array or input value changes...
   useEffect(() => {
     const filteredMonsters = monstersArray.filter(monster => monster.name.toLowerCase().includes(inputValue));
     setFilteredMonsterValue(filteredMonsters);
