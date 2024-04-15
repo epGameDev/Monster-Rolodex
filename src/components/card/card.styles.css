@@ -1,6 +1,7 @@
 .container__card {
-  max-width: 20rem;
-  min-height: 30rem;
+  margin: auto;
+  max-width: 15rem;
+  min-height: 25rem;
   aspect-ratio: 2/2.5;
   display: flex;
   flex-direction: column;
@@ -9,6 +10,7 @@
   border-radius: 5px;
   padding: 25px;
   cursor: pointer;
+  object-fit: cover;
   -moz-osx-font-smoothing: grayscale;
   backface-visibility: hidden;
   transform: translateZ(0);

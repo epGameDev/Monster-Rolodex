@@ -18,7 +18,6 @@ const App = () => {
     fetch("https://jsonplaceholder.typicode.com/users")
     .then((response) => response.json())
     .then((monster) => setMonsterArrayValue(monster));
-    console.log("API Call");
   }, []);
 
   // Creating filtered array as to not modify original array, only changes if the monster array or input value changes...
